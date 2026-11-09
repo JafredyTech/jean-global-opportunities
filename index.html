@@ -77,7 +77,8 @@ async function loadOpportunities() {
         <div id="opportunities-list">Loading opportunities...</div>
     `;
 
-    document.body.insertBefore(section, document.body.lastElementChild);
+    document.querySelector("footer").before(section);
+
 
     const list = document.getElementById("opportunities-list");
 
