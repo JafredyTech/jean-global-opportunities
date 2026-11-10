@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jafredytech.github.io/jean-global-opportunities/sitemap.xml
