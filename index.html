@@ -1,184 +1,696 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Jean Global Opportunities — jobs, scholarships, UN opportunities, youth programmes, conferences and training from verified official sources.">
-<title>Jean Global Opportunities | International Jobs, Scholarships & Youth Programs</title>
+
+<meta name="description" content="Jean Global Opportunities — discover international jobs, scholarships, UN opportunities, youth programmes, conferences and training from verified official sources.">
+
+<meta name="robots" content="index, follow">
+
+<title>Jean Global Opportunities | Your Gateway to Global Opportunities</title>
+
 <link rel="canonical" href="https://jafredytech.github.io/jean-global-opportunities/">
-<style>
+
 <link rel="icon" type="image/png" href="jgo-favicon.png">
-</head>
 
-<body>
-<div style="text-align:center; padding:15px;">
-  <img src="jean-global-logo.png"
-       alt="Jean Global Opportunities"
-       style="width:100%; max-width:900px; height:auto; display:block; margin:0 auto;">
-</div>
+<style>
+:root {
+--navy:#071b35;
+--blue:#1267c5;
+--gold:#f4bd45;
+--ink:#172338;
+--muted:#64748b;
+--paper:#f4f7fb;
+--white:#fff;
+}
 
+* {
+box-sizing:border-box;
+}
 
-header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 14px #071b3533}
-.wrap{max-width:1120px;margin:auto;padding:0 18px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
-.brand{font-size:19px;font-weight:800;letter-spacing:.3px}.brand span{color:var(--gold)}nav{display:flex;gap:17px;flex-wrap:wrap}nav a{color:#eaf2ff;text-decoration:none;font-size:14px}nav a:hover{color:var(--gold)}
-.hero{background:linear-gradient(120deg,#071b35,#104b89);color:white;padding:62px 0 54px}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:0 0 14px;max-width:760px}.hero p{max-width:680px;color:#d9e8fb;font-size:17px}.tag{display:inline-block;color:#172338;background:var(--gold);padding:6px 12px;border-radius:30px;font-weight:700;font-size:12px;margin-bottom:15px}
-.searchbox{display:flex;gap:8px;max-width:650px;margin-top:24px}.searchbox input{flex:1;min-width:0;padding:14px;border:0;border-radius:8px;font-size:15px}.btn{background:var(--gold);color:#172338;border:0;border-radius:8px;padding:13px 18px;font-weight:800;cursor:pointer;text-decoration:none;display:inline-block}.btn.blue{background:var(--blue);color:white}.section{padding:38px 0}.section h2{margin:0 0 8px;font-size:27px}.lead{color:var(--muted);margin:0 0 22px}.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.cat{background:white;border:1px solid #e3eaf3;border-radius:12px;padding:19px;text-decoration:none;color:var(--ink);font-weight:700;box-shadow:0 4px 14px #0b23400a}.cat span{font-size:25px;display:block;margin-bottom:7px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:white;border:1px solid #e2e8f0;border-radius:13px;padding:19px;box-shadow:0 5px 18px #0b23400b}.label{display:inline-block;background:#eaf2ff;color:#1556a0;border-radius:30px;padding:4px 9px;font-size:11px;font-weight:800}.card h3{font-size:18px;line-height:1.3;margin:12px 0 8px}.card p{color:var(--muted);font-size:14px}.card a{color:var(--blue);font-weight:700;text-decoration:none}.notice{background:#fff8e7;border:1px solid #f4d68a;padding:17px;border-radius:10px;color:#684b0b}.about{background:white;border-radius:13px;padding:24px;border:1px solid #e2e8f0}footer{background:var(--navy);color:#dce8f8;padding:27px 0;margin-top:30px}footer a{color:var(--gold)}
-@media(max-width:760px){.top{align-items:flex-start;flex-direction:column}nav{gap:12px}.categories,.cards{grid-template-columns:1fr 1fr}.hero{padding:45px 0}.searchbox{flex-direction:column}}
-@media(max-width:440px){.categories,.cards{grid-template-columns:1fr}.brand{font-size:17px}}
+html {
+scroll-behavior:smooth;
+}
+
+body {
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--paper);
+color:var(--ink);
+line-height:1.6;
+}
+
+.wrap {
+max-width:1120px;
+margin:auto;
+padding:0 18px;
+}
+
+/* LOGO */
+
+.logo-area {
+text-align:center;
+padding:15px;
+background:white;
+}
+
+.logo-area img {
+width:100%;
+max-width:900px;
+height:auto;
+display:block;
+margin:0 auto;
+}
+
+/* HEADER */
+
+header {
+background:var(--navy);
+color:white;
+position:sticky;
+top:0;
+z-index:10;
+box-shadow:0 3px 14px #071b3533;
+}
+
+.top {
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:16px;
+padding:14px 0;
+}
+
+.brand {
+font-size:19px;
+font-weight:800;
+}
+
+.brand span {
+color:var(--gold);
+}
+
+nav {
+display:flex;
+gap:17px;
+flex-wrap:wrap;
+}
+
+nav a {
+color:#eaf2ff;
+text-decoration:none;
+font-size:14px;
+}
+
+nav a:hover {
+color:var(--gold);
+}
+
+/* HERO */
+
+.hero {
+background:linear-gradient(120deg,#071b35,#104b89);
+color:white;
+padding:62px 0 54px;
+}
+
+.hero h1 {
+font-size:clamp(30px,5vw,48px);
+line-height:1.12;
+margin:0 0 14px;
+max-width:760px;
+}
+
+.hero p {
+max-width:680px;
+color:#d9e8fb;
+font-size:17px;
+}
+
+.tag {
+display:inline-block;
+color:#172338;
+background:var(--gold);
+padding:6px 12px;
+border-radius:30px;
+font-weight:700;
+font-size:12px;
+margin-bottom:15px;
+}
+
+/* SEARCH */
+
+.searchbox {
+display:flex;
+gap:8px;
+max-width:650px;
+margin-top:24px;
+}
+
+.searchbox input {
+flex:1;
+min-width:0;
+padding:14px;
+border:0;
+border-radius:8px;
+font-size:15px;
+}
+
+.btn {
+background:var(--gold);
+color:#172338;
+border:0;
+border-radius:8px;
+padding:13px 18px;
+font-weight:800;
+cursor:pointer;
+}
+
+/* SECTIONS */
+
+.section {
+padding:38px 0;
+}
+
+.section h2 {
+margin:0 0 8px;
+font-size:27px;
+}
+
+.lead {
+color:var(--muted);
+margin:0 0 22px;
+}
+
+/* CATEGORIES */
+
+.categories {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+}
+
+.cat {
+background:white;
+border:1px solid #e3eaf3;
+border-radius:12px;
+padding:19px;
+text-decoration:none;
+color:var(--ink);
+font-weight:700;
+box-shadow:0 4px 14px #0b23400a;
+}
+
+.cat span {
+font-size:25px;
+display:block;
+margin-bottom:7px;
+}
+
+/* OPPORTUNITY CARDS */
+
+.cards {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px;
+}
+
+.card {
+background:white;
+border:1px solid #e2e8f0;
+border-radius:13px;
+padding:19px;
+box-shadow:0 5px 18px #0b23400b;
+}
+
+.label {
+display:inline-block;
+background:#eaf2ff;
+color:#1556a0;
+border-radius:30px;
+padding:4px 9px;
+font-size:11px;
+font-weight:800;
+}
+
+.card h3 {
+font-size:18px;
+line-height:1.3;
+margin:12px 0 8px;
+}
+
+.card p {
+color:var(--muted);
+font-size:14px;
+}
+
+.card a {
+color:var(--blue);
+font-weight:700;
+text-decoration:none;
+display:inline-block;
+margin-top:8px;
+}
+
+.message {
+background:white;
+padding:18px;
+border-radius:10px;
+margin:12px 0;
+}
+
+/* ABOUT */
+
+.notice {
+background:#fff8e7;
+border:1px solid #f4d68a;
+padding:17px;
+border-radius:10px;
+color:#684b0b;
+}
+
+.about {
+background:white;
+border-radius:13px;
+padding:24px;
+border:1px solid #e2e8f0;
+}
+
+/* FOOTER */
+
+footer {
+background:var(--navy);
+color:#dce8f8;
+padding:27px 0;
+margin-top:30px;
+}
+
+footer a {
+color:white;
+text-decoration:underline;
+}
+
+/* MOBILE */
+
+@media(max-width:760px) {
+
+.top {
+align-items:flex-start;
+flex-direction:column;
+}
+
+nav {
+gap:12px;
+}
+
+.categories,
+.cards {
+grid-template-columns:1fr 1fr;
+}
+
+.hero {
+padding:45px 0;
+}
+
+.searchbox {
+flex-direction:column;
+}
+
+}
+
+@media(max-width:440px) {
+
+.categories,
+.cards {
+grid-template-columns:1fr;
+}
+
+.brand {
+font-size:17px;
+}
+
+}
 </style>
 </head>
-   <link rel="icon" type="image/png" href="jgo-favicon.png">
-</head>
+
 <body>
-<body>
-   <div style="text-align:center; padding:15px;">
-  <img src="jean-global-logo.png"
-       alt="Jean Global Opportunities"
-       style="width:100%; max-width:900px; height:auto; display:block; margin:0 auto;">
-</div> 
-  <img src="jean-global-logo.png"
-       alt="Jean Global Opportunities"
-       style="width:100%; max-width:900px; height:auto; display:block; margin:0 auto;">
+
+<!-- ONE LOGO ONLY -->
+
+<div class="logo-area">
+<img src="jean-global-logo.png"
+alt="Jean Global Opportunities">
 </div>
-  <img src="jean-global-logo.png"
-       alt="Jean Global Opportunities"
-       style="width:100%; max-width:900px; height:auto; display:block; margin:0 auto;"
+
+<!-- HEADER -->
+
+<header>
+<div class="wrap top">
+
+<div class="brand">
+JEAN GLOBAL <span>OPPORTUNITIES</span>
 </div>
-    
-<header><div class="wrap top">
-<div class="brand">JEAN GLOBAL <span>OPPORTUNITIES</span></div>
-<nav aria-label="Main navigation"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#latest">Opportunities</a><a href="#about">About</a></nav>
-</div></header>
+
+<nav aria-label="Main navigation">
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#latest">Opportunities</a>
+<a href="#about">About</a>
+</nav>
+
+</div>
+</header>
+
 <main>
-<section class="hero" id="home"><div class="wrap">
-<div class="tag">YOUR GATEWAY TO GLOBAL OPPORTUNITIES</div>
-<h1>Discover opportunities.<br>Build your future.</h1>
-<p>Find international jobs, scholarships, UN opportunities, youth programmes, conferences and training opportunities in one place.</p>
-<div class="searchbox"><input id="searchInput" type="search" placeholder="Search jobs, scholarships, country..." aria-label="Search opportunities"><button class="btn" onclick="filterCards()">Search</button></div>
-</div></section>
-<section class="section" id="categories"><div class="wrap">
-<h2>Explore opportunities</h2><p class="lead">Choose a category to discover opportunities around the world.</p>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+<div class="wrap">
+
+<div class="tag">
+YOUR GATEWAY TO GLOBAL OPPORTUNITIES
+</div>
+
+<h1>
+Discover opportunities.<br>
+Build your future.
+</h1>
+
+<p>
+Find international jobs, scholarships, UN opportunities,
+youth programmes, conferences and training opportunities
+in one place.
+</p>
+
+<div class="searchbox">
+
+<input
+id="searchInput"
+type="search"
+placeholder="Search jobs, scholarships, country..."
+aria-label="Search opportunities">
+
+<button class="btn" onclick="filterCards()">
+Search
+</button>
+
+</div>
+
+</div>
+</section>
+
+<!-- CATEGORIES -->
+
+<section class="section" id="categories">
+<div class="wrap">
+
+<h2>Explore Opportunities</h2>
+
+<p class="lead">
+Choose a category to discover opportunities around the world.
+</p>
+
 <div class="categories">
-<a class="cat" href="#latest" onclick="chooseCategory('Jobs')"><span>💼</span>Jobs</a>
-<a class="cat" href="#latest" onclick="chooseCategory('Scholarships')"><span>🎓</span>Scholarships</a>
-<a class="cat" href="#latest" onclick="chooseCategory('UN Opportunities')"><span>🌐</span>UN Opportunities</a>
-<a class="cat" href="#latest" onclick="chooseCategory('Youth Programmes')"><span>🙌</span>Youth Programmes</a>
-<a class="cat" href="#latest" onclick="chooseCategory('Conferences')"><span>🎤</span>Conferences</a>
-<a class="cat" href="#latest" onclick="chooseCategory('Training')"><span>🧑‍💻</span>Training</a>
-</div></div></section>
-<section class="section" id="latest"><div class="wrap">
-<h2>Featured opportunities</h2><p class="lead">This starter page contains demonstration cards. Replace them with verified, currently open opportunities and official application links before publishing.</p>
-<div class="cards" id="cards">
-<article class="card" data-category="Jobs"><span class="label">JOBS · DEMO</span><h3>International and Entry-Level Jobs</h3><p>Use this space to publish a real vacancy after checking eligibility, location, closing date and whether international applicants can apply.</p><a href="#about">How we verify →</a></article>
-<article class="card" data-category="Scholarships"><span class="label">SCHOLARSHIPS · DEMO</span><h3>Scholarships and Study Grants</h3><p>Add verified scholarships with eligible countries, education requirements, funding details and the official application deadline.</p><a href="#about">How we verify →</a></article>
-<article class="card" data-category="UN Opportunities"><span class="label">UN · DEMO</span><h3>UN and International Organization Opportunities</h3><p>Publish internships, volunteer roles and programmes only after checking the official organization website.</p><a href="#about">How we verify →</a></article>
-<article class="card" data-category="Youth Programmes"><span class="label">YOUTH · DEMO</span><h3>Youth Leadership Programmes</h3><p>Share youth initiatives, exchanges and leadership programmes with clear age and country eligibility.</p><a href="#about">How we verify →</a></article>
-<article class="card" data-category="Conferences"><span class="label">CONFERENCES · DEMO</span><h3>Conferences and Forums</h3><p>Include participation format, location, funding availability, deadline and the organizer's official link.</p><a href="#about">How we verify →</a></article>
-<article class="card" data-category="Training"><span class="label">TRAINING · DEMO</span><h3>Free Courses and Professional Training</h3><p>Add credible training opportunities, including online courses and programmes open to international learners.</p><a href="#about">How we verify →</a></article>
-</div><p id="noResults" style="display:none;color:#a12b2b">No matching cards. Try another search.</p>
-</div></section>
-<section class="section" id="about"><div class="wrap">
-<div class="about"><h2>About Jean Global Opportunities</h2><p>Jean Global Opportunities helps people discover education, career and development opportunities from trusted organizations around the world.</p>
-<div class="notice"><strong>Stay safe:</strong> Always confirm an opportunity on the official employer, university or organization website. Never pay someone who promises a job, scholarship or visa. Check deadlines and eligibility before applying.</div>
-<p style="margin-bottom:0">Contact: <a href="mailto:niyonkurujeanfredy76@gmail.com">niyonkurujeanfredy76@gmail.com</a></p></div>
-</div></section>
+
+<a class="cat" href="#latest" onclick="chooseCategory('Jobs')">
+<span>💼</span>Jobs
+</a>
+
+<a class="cat" href="#latest" onclick="chooseCategory('Scholarships')">
+<span>🎓</span>Scholarships
+</a>
+
+<a class="cat" href="#latest" onclick="chooseCategory('UN Opportunities')">
+<span>🌐</span>UN Opportunities
+</a>
+
+<a class="cat" href="#latest" onclick="chooseCategory('Youth Programmes')">
+<span>🙌</span>Youth Programmes
+</a>
+
+<a class="cat" href="#latest" onclick="chooseCategory('Conferences')">
+<span>🎤</span>Conferences
+</a>
+
+<a class="cat" href="#latest" onclick="chooseCategory('Training')">
+<span>🧑‍💻</span>Training
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- LATEST OPPORTUNITIES -->
+
+<section class="section" id="latest">
+<div class="wrap">
+
+<h2>🌍 Latest Opportunities</h2>
+
+<p class="lead">
+Discover the latest jobs, scholarships, programmes and
+international opportunities.
+</p>
+
+<div class="cards" id="opportunities-list">
+<div class="message">Loading opportunities...</div>
+</div>
+
+<p id="noResults" style="display:none;color:#a12b2b;">
+No matching opportunities found. Try another search.
+</p>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+<div class="wrap">
+
+<div class="about">
+
+<h2>About Jean Global Opportunities</h2>
+
+<p>
+Jean Global Opportunities helps people discover education,
+career and development opportunities from trusted
+organizations around the world.
+</p>
+
+<div class="notice">
+<strong>Stay safe:</strong>
+Always confirm an opportunity on the official employer,
+university or organization website. Never pay someone who
+promises a job, scholarship or visa. Check deadlines and
+eligibility before applying.
+</div>
+
+<p style="margin-bottom:0">
+Contact:
+<a href="mailto:niyonkurujeanfredy76@gmail.com">
+niyonkurujeanfredy76@gmail.com
+</a>
+</p>
+
+</div>
+</div>
+</section>
+
 </main>
+
+<!-- FOOTER -->
+
 <footer>
 <div class="wrap">
-© <span id="year"></span> JEAN GLOBAL OPPORTUNITIES · Your Gateway to Global Opportunities.
-<br>
-<a href="privacy.html" style="color:white;text-decoration:underline;">Privacy Policy</a>
-    &nbsp;|&nbsp;
-<a href="terms.html" style="color:white;text-decoration:underline;">Terms &amp; Conditions</a>
-    &nbsp;|&nbsp;
-<a href="disclaimer.html" style="color:white;text-decoration:underline;">Disclaimer</a>
+
+© <span id="year"></span>
+JEAN GLOBAL OPPORTUNITIES · Your Gateway to Global Opportunities.
+
+<br><br>
+
+<a href="privacy.html">Privacy Policy</a>
+&nbsp;|&nbsp;
+
+<a href="terms.html">Terms &amp; Conditions</a>
+&nbsp;|&nbsp;
+
+<a href="disclaimer.html">Disclaimer</a>
+
 </div>
 </footer>
+
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
-function filterCards(){const q=document.getElementById('searchInput').value.toLowerCase().trim();let shown=0;document.querySelectorAll('.card').forEach(card=>{const match=card.innerText.toLowerCase().includes(q);card.style.display=match?'block':'none';if(match)shown++;});document.getElementById('noResults').style.display=shown?'none':'block';}
-function chooseCategory(category){document.getElementById('searchInput').value=category;filterCards();}
-document.getElementById('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')filterCards();});
+
+/* CURRENT YEAR */
+
+document.getElementById('year').textContent =
+new Date().getFullYear();
+
+/* SEARCH OPPORTUNITIES */
+
+function filterCards() {
+
+const q = document.getElementById('searchInput')
+.value.toLowerCase().trim();
+
+let shown = 0;
+
+document.querySelectorAll('.opportunity-card').forEach(card => {
+
+const match = card.innerText.toLowerCase().includes(q);
+
+card.style.display = match ? 'block' : 'none';
+
+if(match) shown++;
+
+});
+
+document.getElementById('noResults').style.display =
+shown ? 'none' : 'block';
+
+}
+
+/* CATEGORY SEARCH */
+
+function chooseCategory(category) {
+
+document.getElementById('searchInput').value = category;
+
+filterCards();
+
+}
+
+/* ENTER KEY SEARCH */
+
+document.getElementById('searchInput')
+.addEventListener('keydown', function(e) {
+
+if(e.key === 'Enter') {
+filterCards();
+}
+
+});
+
 </script>
-<!-- JEAN GLOBAL OPPORTUNITIES - SUPABASE -->
+
+<!-- SUPABASE DATABASE CONNECTION -->
+
 <script>
-const SUPABASE_URL = "https://bfhftrnekepumldknfpy.supabase.co";
-const SUPABASE_KEY = "sb_publishable_p4AE-MVrYtK9RVfoL3teAw_ukB_sL1l";
+
+const SUPABASE_URL =
+"https://bfhftrnekepumldknfpy.supabase.co";
+
+const SUPABASE_KEY =
+"sb_publishable_p4AE-MVrYtK9RVfoL3teAw_ukB_sL1l";
 
 async function loadOpportunities() {
-    const section = document.createElement("section");
-    section.id = "latest-opportunities";
-    section.innerHTML = `
-        <h2>🌍 Latest Opportunities</h2>
-        <p>Jobs, Scholarships, UN Opportunities & Trainings</p>
-        <div id="opportunities-list">Loading opportunities...</div>
-    `;
 
-    document.querySelector("footer").before(section);
+const list = document.getElementById("opportunities-list");
 
+try {
 
-    const list = document.getElementById("opportunities-list");
-    try {
-        const response = await fetch(
-            SUPABASE_URL + "/rest/v1/opportunities?select=*&status=eq.published&order=created_at.desc",
-            {
-                headers: {
-                    "apikey": SUPABASE_KEY,
-                    "Authorization": "Bearer " + SUPABASE_KEY
-                }
-            }
-        );
+const response = await fetch(
 
-        if (!response.ok) throw new Error("Connection failed");
+SUPABASE_URL +
+"/rest/v1/opportunities?select=*&status=eq.published&order=created_at.desc",
 
-        const data = await response.json();
-        list.innerHTML = "";
+{
 
-        if (data.length === 0) {
-            list.textContent = "No opportunities published yet.";
-            return;
-        }
+headers: {
 
-        data.forEach(item => {
-            const card = document.createElement("div");
-            card.style.cssText =
-                "padding:15px;margin:12px 0;border:1px solid #ddd;border-radius:10px;";
+"apikey": SUPABASE_KEY,
 
-            const title = document.createElement("h3");
-            title.textContent = item.title;
+"Authorization": "Bearer " + SUPABASE_KEY
 
-            const category = document.createElement("p");
-            category.textContent = "Category: " + (item.category || "");
+}
 
-            const country = document.createElement("p");
-            country.textContent = "Country: " + (item.country || "Not specified");
+}
 
-            const description = document.createElement("p");
-            description.textContent = item.description || "";
+);
 
-            card.append(title, category, country, description);
+if(!response.ok) {
+throw new Error("Database connection failed");
+}
 
-            if (item.apply_url) {
-                const link = document.createElement("a");
-                link.textContent = "Apply Now →";
-                link.href = item.apply_url;
-                link.target = "_blank";
-                link.rel = "noopener noreferrer";
-                card.appendChild(link);
-            }
+const data = await response.json();
 
-            list.appendChild(card);
-        });
+list.innerHTML = "";
 
-    } catch (error) {
-        list.textContent = "Could not load opportunities. Please try again.";
-        console.error(error);
-    }
+if(data.length === 0) {
+
+list.innerHTML =
+'<div class="message">No opportunities published yet. Please check again later.</div>';
+
+return;
+
+}
+
+data.forEach(item => {
+
+const card = document.createElement("article");
+
+card.className = "card opportunity-card";
+
+const label = document.createElement("span");
+
+label.className = "label";
+
+label.textContent = item.category || "Opportunity";
+
+const title = document.createElement("h3");
+
+title.textContent = item.title || "Untitled Opportunity";
+
+const country = document.createElement("p");
+
+country.textContent =
+"Country: " + (item.country || "Not specified");
+
+const description = document.createElement("p");
+
+description.textContent = item.description || "";
+
+card.append(label, title, country, description);
+
+if(item.apply_url) {
+
+const link = document.createElement("a");
+
+link.textContent = "Apply Now →";
+
+link.href = item.apply_url;
+
+link.target = "_blank";
+
+link.rel = "noopener noreferrer";
+
+card.appendChild(link);
+
+}
+
+list.appendChild(card);
+
+});
+
+document.getElementById('noResults').style.display = 'none';
+
+} catch(error) {
+
+list.innerHTML =
+'<div class="message">Could not load opportunities. Please try again later.</div>';
+
+console.error(error);
+
+}
+
 }
 
 loadOpportunities();
+
 </script>
 
-
+</body>
 </html>
