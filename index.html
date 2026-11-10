@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +57,13 @@ header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-s
 <p style="margin-bottom:0">Contact: <a href="mailto:niyonkurujeanfredy76@gmail.com">niyonkurujeanfredy76@gmail.com</a></p></div>
 </div></section>
 </main>
-<footer><div class="wrap">© <span id="year"></span> JEAN GLOBAL OPPORTUNITIES · Your Gateway to Global Opportunities.</div></footer>
+<footer>
+<div class="wrap">
+© <span id="year"></span> JEAN GLOBAL OPPORTUNITIES · Your Gateway to Global Opportunities.
+<br>
+<a href="privacy.html" style="color:white;text-decoration:underline;">Privacy Policy</a>
+</div>
+</footer>
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
 function filterCards(){const q=document.getElementById('searchInput').value.toLowerCase().trim();let shown=0;document.querySelectorAll('.card').forEach(card=>{const match=card.innerText.toLowerCase().includes(q);card.style.display=match?'block':'none';if(match)shown++;});document.getElementById('noResults').style.display=shown?'none':'block';}
@@ -81,7 +88,6 @@ async function loadOpportunities() {
 
 
     const list = document.getElementById("opportunities-list");
-
     try {
         const response = await fetch(
             SUPABASE_URL + "/rest/v1/opportunities?select=*&status=eq.published&order=created_at.desc",
@@ -142,5 +148,6 @@ async function loadOpportunities() {
 
 loadOpportunities();
 </script>
+
 </body>
 </html>
